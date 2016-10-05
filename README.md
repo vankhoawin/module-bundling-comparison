@@ -25,6 +25,14 @@ bundle-browserify-rollup.js 523K
 bundle-webpack.js 473K
 bundle-rollup.js NONE (cannot import lodash directly)
 ```
+### Main import + UglifyJS
+```sh
+bundle-webpack.min.js 145K
+bundle-browserify.min.js 141K
+bundle-jspm.min.js 141K
+bundle-browserify-rollup.min.js 139K
+bundle-rollup.js NONE (cannot import lodash directly)
+```
 ### Direct import
 ```sh
 bundle-jspm.js 45K
@@ -32,6 +40,13 @@ bundle-webpack.js 43K
 bundle-browserify.js 37K
 bundle-browserify-rollup.js 30K
 bundle-rollup.js 29K
+```
+### Direct import + UglifyJS
+```sh
+bundle-jspm.min.js 24K
+bundle-webpack.min.js 22K
+bundle-browserify.min.js 19K
+bundle-browserify-rollup.min.js 13K
 ```
 
 ## Notes
