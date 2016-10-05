@@ -47,6 +47,7 @@ bundle-jspm.min.js 24K
 bundle-webpack.min.js 22K
 bundle-browserify.min.js 19K
 bundle-browserify-rollup.min.js 13K
+bundle-rollup.min.js 12K
 ```
 
 ## Notes

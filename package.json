@@ -23,7 +23,7 @@
     "main-min:browserify-rollup": "uglifyjs dist/main/bundle-browserify-rollup.js -o dist/main-min/bundle-browserify-rollup.min.js",
     "main-min:jspm": "uglifyjs dist/main/bundle-jspm.js -o dist/main-min/bundle-jspm.min.js",
     "main-min:webpack": "uglifyjs dist/main/bundle-webpack.js -o dist/main-min/bundle-webpack.min.js",
-    "direct-min": "mkdirp dist/direct-min && npm run direct-min:browserify & npm run direct-min:browserify-rollup & npm run direct-min:jspm & npm run direct-min:webpack",
+    "direct-min": "mkdirp dist/direct-min && npm run direct-min:browserify & npm run direct-min:browserify-rollup & npm run direct-min:jspm & npm run direct-min:rollup & npm run direct-min:webpack",
     "direct-min:browserify": "uglifyjs dist/direct/bundle-browserify.js -o dist/direct-min/bundle-browserify.min.js",
     "direct-min:browserify-rollup": "uglifyjs dist/direct/bundle-browserify-rollup.js -o dist/direct-min/bundle-browserify-rollup.min.js",
     "direct-min:jspm": "uglifyjs dist/direct/bundle-jspm.js -o dist/direct-min/bundle-jspm.min.js",
