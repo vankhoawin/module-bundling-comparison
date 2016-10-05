@@ -54,7 +54,8 @@ bundle-browserify-rollup.min.js 13K
   bundle, but `import { get } from 'lodash-es'` does.
 
 ## To run
-- `npm run <script>` one of the scripts found in `package.json`
+- `npm run all` to concurrently create bundles and then concurrently create minified bundles
+- `npm run all:min`
 - `ls -lah -S -R dist/* | awk '{print $9, $5}'` to read the bundle filesizes, ordered by size desc
 
 ##### Basically Nolan Lawson's [Rollup Comparison](https://github.com/nolanlawson/rollup-comparison), but with a lodash dependency and an unused export.

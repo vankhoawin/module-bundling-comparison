@@ -1,7 +1,9 @@
+const directory = process.env.DIRECTORY;
+
 module.exports = {
-  entry: `${__dirname}/src_main/index.js`,
+  entry: `${__dirname}/src_${directory}/index.js`,
   output: {
-    path: `${__dirname}/dist/main`,
+    path: `${__dirname}/dist/${directory}`,
     filename: 'bundle-webpack.js'
   },
   module: {
