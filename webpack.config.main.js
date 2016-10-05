@@ -1,7 +1,7 @@
 module.exports = {
-  entry: `${__dirname}/src/index.js`,
+  entry: `${__dirname}/src_main/index.js`,
   output: {
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/dist/main`,
     filename: 'bundle-webpack.js'
   },
   module: {

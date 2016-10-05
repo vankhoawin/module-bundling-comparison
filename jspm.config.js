@@ -1,7 +1,6 @@
 SystemJS.config({
   browserConfig: {
     "paths": {
-      "*": "src/*.js",
       "npm:": "/jspm_packages/npm/",
       "github:": "/jspm_packages/github/"
     }

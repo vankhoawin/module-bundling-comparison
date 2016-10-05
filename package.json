@@ -4,11 +4,20 @@
   "description": "module bundling test",
   "main": "module-bundling-comparison-2016.js",
   "scripts": {
-    "browserify": "mkdirp dist && browserify src/index.js -o dist/bundle-browserify.js -t [ babelify --presets [ es2015 ] ]",
-    "browserify-rollup": "mkdirp dist && browserify src/index.js -o dist/bundle-browserify-rollup.js -t [ rollupify --config rollup.config.js ]",
-    "jspm": "mkdirp dist && jspm bundle src/index.js dist/bundle-jspm.js --skip-source-maps",
-    "rollup": "mkdirp dist && rollup -c rollup.config.js",
-    "webpack": "mkdirp dist && webpack"
+    "all": "npm run main:all & npm run direct:all",
+
+    "main:all": "npm run main:browserify & npm run main:browserify-rollup & npm run main:jspm & npm run main:webpack",
+    "main:browserify": "mkdirp dist/main && browserify src_main/index.js -o dist/main/bundle-browserify.js -t [ babelify --presets [ es2015 ] ]",
+    "main:browserify-rollup": "mkdirp dist/main && browserify src_main/index.js -o dist/main/bundle-browserify-rollup.js -t [ rollupify --config rollup.config.direct.js ]",
+    "main:jspm": "mkdirp dist/main && jspm bundle src_main/index.js dist/main/bundle-jspm.js --skip-source-maps",
+    "main:webpack": "mkdirp dist/main && webpack --config webpack.config.main.js",
+
+    "direct:all": "npm run direct:browserify & npm run direct:browserify-rollup & npm run direct:jspm & npm run direct:rollup & npm run direct:webpack",
+    "direct:browserify": "mkdirp dist/direct && browserify src_direct/index.js -o dist/direct/bundle-browserify.js -t [ babelify --presets [ es2015 ] ]",
+    "direct:browserify-rollup": "mkdirp dist/direct && browserify src_direct/index.js -o dist/direct/bundle-browserify-rollup.js -t [ rollupify --config rollup.config.direct.js ]",
+    "direct:jspm": "mkdirp dist/direct && jspm bundle src_direct/index.js dist/direct/bundle-jspm.js --skip-source-maps",
+    "direct:rollup": "mkdirp dist/direct && rollup -c rollup.config.direct.js",
+    "direct:webpack": "mkdirp dist/direct && webpack --config webpack.config.direct.js"
   },
   "author": "Van Nguyen",
   "license": "ISC",
@@ -19,9 +28,13 @@
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
     "jspm": "^0.17.0-beta.29",
+    "lodash": "^4.16.3",
+    "lodash-es": "^4.16.3",
     "mkdirp": "^0.5.1",
     "rollup": "^0.36.1",
     "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.4",
+    "rollup-plugin-node-resolve": "^2.0.0",
     "rollupify": "^0.3.4",
     "webpack": "^2.1.0-beta.25"
   },
