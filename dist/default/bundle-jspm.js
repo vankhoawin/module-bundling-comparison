@@ -1,4 +1,4 @@
-System.register("src_main/file1.js", ["lodash"], function($__export) {
+System.register("src_default/file1.js", ["lodash"], function($__export) {
   "use strict";
   var get;
   function fn1() {
@@ -14,7 +14,7 @@ System.register("src_main/file1.js", ["lodash"], function($__export) {
   };
 });
 
-System.register("src_main/file2.js", ["lodash"], function($__export) {
+System.register("src_default/file2.js", ["lodash"], function($__export) {
   "use strict";
   var get;
   function fn2() {
@@ -30,7 +30,7 @@ System.register("src_main/file2.js", ["lodash"], function($__export) {
   };
 });
 
-System.register("src_main/file3.js", ["lodash"], function($__export) {
+System.register("src_default/file3.js", ["lodash"], function($__export) {
   "use strict";
   var get;
   function fn3() {
@@ -46,7 +46,7 @@ System.register("src_main/file3.js", ["lodash"], function($__export) {
   };
 });
 
-System.register("src_main/file4.js", ["lodash"], function($__export) {
+System.register("src_default/file4.js", ["lodash"], function($__export) {
   "use strict";
   var get;
   function fn4() {
@@ -62,7 +62,7 @@ System.register("src_main/file4.js", ["lodash"], function($__export) {
   };
 });
 
-System.register("src_main/file5.js", ["lodash"], function($__export) {
+System.register("src_default/file5.js", ["lodash"], function($__export) {
   "use strict";
   var get;
   function fn5() {
@@ -78,7 +78,7 @@ System.register("src_main/file5.js", ["lodash"], function($__export) {
   };
 });
 
-System.register("src_main/file6.js", ["lodash"], function($__export) {
+System.register("src_default/file6.js", ["lodash"], function($__export) {
   "use strict";
   var get;
   function fn6() {
@@ -94,7 +94,7 @@ System.register("src_main/file6.js", ["lodash"], function($__export) {
   };
 });
 
-System.register("src_main/file7.js", ["lodash"], function($__export) {
+System.register("src_default/file7.js", ["lodash"], function($__export) {
   "use strict";
   var get;
   function fn7() {
@@ -16797,7 +16797,7 @@ System.registerDynamic('npm:lodash@4.16.3/lodash.js', [], true, function ($__req
   }).call(this);
   return module.exports;
 });
-System.register("src_main/file10.js", ["lodash"], function($__export) {
+System.register("src_default/file10.js", ["lodash"], function($__export) {
   "use strict";
   var get;
   function fn10() {
@@ -16813,7 +16813,7 @@ System.register("src_main/file10.js", ["lodash"], function($__export) {
   };
 });
 
-System.register("src_main/file9.js", ["lodash", "./file10.js"], function($__export) {
+System.register("src_default/file9.js", ["lodash", "./file10.js"], function($__export) {
   "use strict";
   var get,
       fn10;
@@ -16832,7 +16832,7 @@ System.register("src_main/file9.js", ["lodash", "./file10.js"], function($__expo
   };
 });
 
-System.register("src_main/file8.js", ["lodash", "./file9.js"], function($__export) {
+System.register("src_default/file8.js", ["lodash", "./file9.js"], function($__export) {
   "use strict";
   var get,
       fn9;
@@ -16852,7 +16852,7 @@ System.register("src_main/file8.js", ["lodash", "./file9.js"], function($__expor
   };
 });
 
-System.register("src_main/index.js", ["./file1.js", "./file2.js", "./file3.js", "./file4.js", "./file5.js", "./file6.js", "./file7.js", "./file8.js"], function($__export) {
+System.register("src_default/index.js", ["./file1.js", "./file2.js", "./file3.js", "./file4.js", "./file5.js", "./file6.js", "./file7.js", "./file8.js"], function($__export) {
   "use strict";
   var fn1,
       fn2,

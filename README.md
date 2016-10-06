@@ -6,7 +6,7 @@
 - see the underlying structural differences and similarities between each bundler
 - `import { get } from 'lodash'` imports every lodash function along with it, while
   `import get from 'lodash/get'` imports just the one function. This is the reason why
-  both main and direct importing are tested.
+  both default and direct importing are tested.
 
 ## The program
 1. `src/index.js` imports fn1()...8() using ES6 modules
@@ -17,7 +17,7 @@
 6. `console.log`s fn1()...9()
 
 ## Stats (ordered by size desc)
-### Main import
+### Default import
 ```sh
 bundle-jspm.js 554K
 bundle-browserify.js 525K
@@ -25,7 +25,7 @@ bundle-browserify-rollup.js 523K
 bundle-webpack.js 473K
 bundle-rollup.js NONE (cannot import lodash directly)
 ```
-### Main import + UglifyJS
+### Default import + UglifyJS
 ```sh
 bundle-webpack.min.js 145K
 bundle-browserify.min.js 141K
