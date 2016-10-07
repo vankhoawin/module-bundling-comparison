@@ -53,6 +53,8 @@ bundle-rollup.min.js 12K
 ## Notes
 - Rollup struggles with non-ES6 modules; `import { get } from 'lodash'` does not load `get` into the
   bundle, but `import { get } from 'lodash-es'` does.
+- As the tests show, tree-shaking does not work on unused methods from objects that *are* used. This is
+  why when lodash is imported by default, Rollup cannot remove all of the unused methods.
 
 ## To run
 - `npm run all` to concurrently create bundles and then concurrently create minified bundles
